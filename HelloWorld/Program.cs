@@ -13,7 +13,7 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             var registry = new SubscriberRegistry();
-            registry.Register<GreetingCommand, GreetingCommandHander>();
+            registry.Register<GreetingCommand, GreetingCommandHandler>();
 
             var builder = CommandProcessorBuilder.With()
                 .Handlers(new HandlerConfiguration(

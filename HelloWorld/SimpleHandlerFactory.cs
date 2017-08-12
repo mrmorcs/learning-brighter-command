@@ -7,7 +7,8 @@ namespace HelloWorld
     {
         public IHandleRequests Create(Type handlerType)
         {
-            return (IHandleRequests) Activator.CreateInstance(handlerType);
+            if(handlerType != typeof(GreetingCommandHandler)) throw new Exception("Unknown handler type: " + handlerType.FullName);
+            return new GreetingCommandHandler();
         }
 
         public void Release(IHandleRequests handler)

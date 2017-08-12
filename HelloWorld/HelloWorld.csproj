@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GreetingCommand.cs" />
-    <Compile Include="GreetingCommandHander.cs" />
+    <Compile Include="GreetingCommandHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleHandlerFactory.cs" />

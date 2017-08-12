@@ -3,7 +3,7 @@ using Paramore.Brighter;
 
 namespace HelloWorld
 {
-    class GreetingCommandHander : RequestHandler<GreetingCommand>
+    class GreetingCommandHandler : RequestHandler<GreetingCommand>
     {
         public override GreetingCommand Handle(GreetingCommand command)
         {
